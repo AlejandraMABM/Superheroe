@@ -1,5 +1,6 @@
 package com.example.superheroe.services
 
+import com.example.superheroe.data.Superhero
 import com.example.superheroe.data.SuperheroResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
