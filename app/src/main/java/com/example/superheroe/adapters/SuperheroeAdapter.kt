@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.superheroe.data.fichaSuperHeroe
-import com.example.superheroe.databinding.ItemSuperheroeBinding
+import com.example.superheroe.databinding.ItemSuperheroBinding
 import com.squareup.picasso.Picasso
 
 
@@ -19,7 +19,7 @@ class SuperheroeAdapter(var items: List<fichaSuperHeroe>, val onItemClick: (Int)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding =
-            ItemSuperheroeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ItemSuperheroBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -33,7 +33,7 @@ class SuperheroeAdapter(var items: List<fichaSuperHeroe>, val onItemClick: (Int)
     }
 }
 
-class ViewHolder(val binding: ItemSuperheroeBinding) : RecyclerView.ViewHolder(binding.root){
+class ViewHolder(val binding: ItemSuperheroBinding) : RecyclerView.ViewHolder(binding.root){
     fun render(superhero: fichaSuperHeroe) {
         binding.nameTextView.text = superhero.name
         Picasso.get().load(superhero.image.url).into(binding.avatarImageView)
