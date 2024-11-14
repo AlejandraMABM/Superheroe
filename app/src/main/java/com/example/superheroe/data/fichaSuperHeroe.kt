@@ -3,6 +3,20 @@ package com.example.superheroe.data
 
 import com.google.gson.annotations.SerializedName
 
+// Api Superheroe id	GET	Search by character id. Returns all information of the character.
+
+
+
+// /search/name
+//This API call helps you in finding the character-id of a character by searching it's name.
+
+data class SuperheroResponse
+    (
+    @SerializedName("response") val response: String,
+    @SerializedName("result-for") val resultFor: String,
+    @SerializedName("results") val results: List<fichaSuperHeroe>
+) { }
+
 data class fichaSuperHeroe(
     @SerializedName("appearance") val appearance: Appearance,
     @SerializedName("biography")  val biography: Biography,
@@ -37,6 +51,8 @@ data class fichaSuperHeroe(
         @SerializedName("group-affiliation") val groupAffiliation: String,
         @SerializedName("relatives") val relatives: String
     )
+
+  //Me aparece duplicado en SuperheroeResponse
 
     data class Image(
         @SerializedName("url") val url: String
