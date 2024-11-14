@@ -33,6 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    // Construye las llamadas directas del find by id
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
