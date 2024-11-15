@@ -5,9 +5,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="240dp"
         android:layout_margin="8dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp">
@@ -16,21 +17,23 @@
             android:id="@+id/avatarImageView"
             android:layout_width="match_parent"
             android:layout_height="240dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/nameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Superhero name"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:textStyle="bold"
             android:layout_gravity="bottom"
-            android:background="@color/text_background"
-            android:textColor="@color/white"
+            android:background="@color/accentColor"
+            android:fontFamily="@font/magicretro"
+            android:gravity="center"
+            android:shadowColor="@color/black"
             android:shadowRadius="5"
-            android:shadowColor="@color/black"/>
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Superhero name" />
+
 
     </androidx.cardview.widget.CardView>
 
