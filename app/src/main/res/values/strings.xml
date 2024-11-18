@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">SUPERHEROES</string>
 
+    <string name="no_results">No resutls for \"%1$s\"!</string>
+    <string name="error">An unexpected error ocurred!</string>
+
+    <string name="menu_biography">Biography</string>
+    <string name="menu_appearance">Appearance</string>
+    <string name="menu_stats">Stats</string>
+
+
 
 </resources>
